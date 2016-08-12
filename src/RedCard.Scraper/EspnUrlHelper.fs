@@ -1,6 +1,6 @@
 ﻿namespace RedCard
 
-module UrlHelper =
+module EspnUrlHelper =
   let private _squadPath = "squad?season=2015"
 
   let private _trimTeamIndexUrl (indexUrl : string) =

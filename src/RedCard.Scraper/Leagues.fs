@@ -5,52 +5,52 @@ module Leagues =
 
   let private _createLeagueLink league tableUrl country =
     {
-      League = league;
-      TableUrl = tableUrl;
+      Name = league;
+      LeagueTableUrl = tableUrl;
       Country = country;
     }
 
   let englishPremierLeague tableUrl =
-     _createLeagueLink League.EnglishPremierLeague tableUrl Country.England
+     _createLeagueLink LeagueName.EnglishPremierLeague tableUrl Country.England
 
   let germanBundesliga tableUrl =
-    _createLeagueLink League.GermanBundesliga tableUrl Country.Germany
+    _createLeagueLink LeagueName.GermanBundesliga tableUrl Country.Germany
 
   let spanishPrimeraDivision tableUrl =
-    _createLeagueLink League.SpanishPrimeraDivision tableUrl Country.Spain
+    _createLeagueLink LeagueName.SpanishPrimeraDivision tableUrl Country.Spain
 
   let italianSeriaA tableUrl =
-    _createLeagueLink League.ItalianSerieA tableUrl Country.Italy
+    _createLeagueLink LeagueName.ItalianSerieA tableUrl Country.Italy
 
   let frenchLigue1 tableUrl =
-    _createLeagueLink League.FrenchLigue1 tableUrl Country.France
+    _createLeagueLink LeagueName.FrenchLigue1 tableUrl Country.France
 
   let mls tableUrl =
-    _createLeagueLink League.MLS tableUrl Country.UnitedStates
+    _createLeagueLink LeagueName.MLS tableUrl Country.UnitedStates
 
   let mexicanLigaMX tableUrl =
-    _createLeagueLink League.MexicanLigaMX tableUrl Country.Mexico
+    _createLeagueLink LeagueName.MexicanLigaMX tableUrl Country.Mexico
 
   let australianALeauge tableUrl =
-    _createLeagueLink League.AustralianALeague tableUrl Country.Australia
+    _createLeagueLink LeagueName.AustralianALeague tableUrl Country.Australia
 
   let brazilianSerieA tableUrl =
-    _createLeagueLink League.BrazilSerieA tableUrl Country.Brazil
+    _createLeagueLink LeagueName.BrazilSerieA tableUrl Country.Brazil
 
   let argentinePrimeraDivision tableUrl =
-    _createLeagueLink League.ArgentinePrimeraDivision tableUrl Country.Argentina
+    _createLeagueLink LeagueName.ArgentinePrimeraDivision tableUrl Country.Argentina
 
   let scottishPremiership tableUrl =
-    _createLeagueLink League.ScottishPremiership tableUrl Country.Scotland
+    _createLeagueLink LeagueName.ScottishPremiership tableUrl Country.Scotland
 
   let portuguesLiga tableUrl =
-    _createLeagueLink League.PortuguesLiga tableUrl Country.Portugal
+    _createLeagueLink LeagueName.PortuguesLiga tableUrl Country.Portugal
 
   let russianPremierLeague tableUrl =
-    _createLeagueLink League.RussianPremierLeague tableUrl Country.Russia
+    _createLeagueLink LeagueName.RussianPremierLeague tableUrl Country.Russia
 
   let turkishSuperLig tableUrl =
-    _createLeagueLink League.RussianPremierLeague tableUrl Country.Turkey
+    _createLeagueLink LeagueName.RussianPremierLeague tableUrl Country.Turkey
 
   let espnLeagues2015 =
     [

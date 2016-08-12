@@ -18,7 +18,7 @@ module Types =
   | Russia
   | Turkey
 
-  type League =
+  type LeagueName =
   | EnglishPremierLeague
   | GermanBundesliga
   | SpanishPrimeraDivision
@@ -34,11 +34,22 @@ module Types =
   | RussianPremierLeague
   | TurkishSuperLig
 
-  type LeagueLink =
+  type League =
     {
-      League : League;
-      TableUrl : string;
+      Name : LeagueName;
+      LeagueTableUrl : string;
       Country : Country
     }
 
-  type SquadLink = { SquadUrl : string; Country : Country }
+  type Team =
+    {
+      Name : string;
+      SquadUrl : string;
+      League : League;
+    }
+
+  type Player =
+    {
+      Name : string;
+      Team : Team;
+    }
