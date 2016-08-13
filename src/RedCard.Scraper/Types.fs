@@ -50,6 +50,9 @@ module Types =
 
   type Player =
     {
+      Position : string;
       Name : string;
+      YellowCards : int
+      RedCards : int
       Team : Team;
     }
