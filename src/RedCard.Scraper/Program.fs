@@ -5,11 +5,13 @@ open RedCard.EspnHtmlParser
 [<EntryPoint>]
 let main argv =
 
-  espnLeagues2015
-  |> Seq.map parseTeams
-  |> Seq.concat
-  |> Seq.iter (fun squadUrl -> printfn "%A" squadUrl)
+  let teams =
+    espnLeagues2015
+    |> Seq.map parseTeams
+    |> Seq.concat
 
+  teams
+  |> Seq.iter parsePlayers
   // TODO: Grab all player info from squad url
 
   printfn "%A" argv
