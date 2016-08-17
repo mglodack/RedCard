@@ -43,8 +43,8 @@ module Leagues =
   let scottishPremiership tableUrl =
     _createLeagueLink LeagueName.ScottishPremiership tableUrl Country.Scotland
 
-  let portuguesLiga tableUrl =
-    _createLeagueLink LeagueName.PortuguesLiga tableUrl Country.Portugal
+  let portugueseLiga tableUrl =
+    _createLeagueLink LeagueName.PortugueseLiga tableUrl Country.Portugal
 
   let russianPremierLeague tableUrl =
     _createLeagueLink LeagueName.RussianPremierLeague tableUrl Country.Russia
@@ -65,7 +65,7 @@ module Leagues =
       brazilianSerieA "http://www.espnfc.us/futebol-brasileiro/85/table?season=2015"
       argentinePrimeraDivision "http://www.espnfc.us/primera-division-de-argentina/1/table?season=2015"
       scottishPremiership "http://www.espnfc.us/scottish-premiership/45/table?season=2015"
-      portuguesLiga "http://www.espnfc.us/portuguese-liga/14/table?season=2015"
+      portugueseLiga "http://www.espnfc.us/portuguese-liga/14/table?season=2015"
       russianPremierLeague "http://www.espnfc.us/russian-premier-league/106/table?season=2015"
       turkishSuperLig "http://www.espnfc.us/turkish-super-lig/18/table?season=2015"
     ]

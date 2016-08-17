@@ -58,7 +58,9 @@ module EspnHtmlParser =
         tdList
         |> _parseTableData "redCards"
         |> _tryConvertToInt
-      Team = team
+      Team = team.Name
+      League = leagueToString team.League.Name
+      Country = countryToString team.League.Country
     }
 
   let parseTeams (league : League) =
@@ -77,4 +79,3 @@ module EspnHtmlParser =
       node.Descendants ["td"]
       |> Seq.exists (_matchesAttributeNameAndValue "class" "redCards"))
     |> Seq.map (_parsePlayerInfo team)
-    |> Seq.iter (printfn "%A")
